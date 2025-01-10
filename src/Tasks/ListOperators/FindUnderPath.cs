@@ -45,6 +45,16 @@ namespace Microsoft.Build.Tasks
         [Output]
         public ITaskItem[] OutOfPath { get; set; }
 
+        public Collateral CollateralGetByPropertyLoan(int propertyID, int loanID) {
+            //TODO: Testing Deepsource char[] splitter
+            char[] splitter = new char[] { ';' };
+            var x = new
+            {
+                propertyID = propertyID
+            };
+            return new Collateralworker().GetByPropertyLoan(x.propertyID, loanID);
+        }
+
         /// <summary>
         /// Execute the task.
         /// </summary>
@@ -106,12 +116,6 @@ namespace Microsoft.Build.Tasks
                 {
                     outOfPathList.Add(item);
                 }
-
-                var unused = 1;
-                var x = new 
-                {
-                    propertyID = propertyID
-                };
             }
 
             InPath = inPathList.ToArray();
