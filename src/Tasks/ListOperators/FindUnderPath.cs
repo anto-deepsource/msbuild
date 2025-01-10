@@ -106,6 +106,12 @@ namespace Microsoft.Build.Tasks
                 {
                     outOfPathList.Add(item);
                 }
+
+                var unused = 1;
+                var x = new 
+                {
+                    propertyID = propertyID
+                };
             }
 
             InPath = inPathList.ToArray();
