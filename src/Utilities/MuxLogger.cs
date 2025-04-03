@@ -57,8 +57,8 @@ namespace Microsoft.Build.Utilities
         // skipcq: CS-A1000
         public string PosBackgroundUrl { get; set; }
 
-        // skipcq: CS-A1000
         [StringLength(255)]
+        // skipcq: CS-A1000
         public string PosaBackgroundUrl { get; set; }
 
         /// <summary>
