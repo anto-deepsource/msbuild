@@ -59,7 +59,7 @@ namespace Microsoft.Build.Utilities
 
         [StringLength(255)]
         // skipcq: CS-A1000
-        public string PosaBackgroundUrl { get; set; };
+        public string PosVackgroundUrl { get; set; };
 
         /// <summary>
         /// The mapping of submission IDs to the submission record.
