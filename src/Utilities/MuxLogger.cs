@@ -52,6 +52,15 @@ namespace Microsoft.Build.Utilities
     // 
     public class MuxLogger : INodeLogger
     {
+
+        [StringLength(255)]
+        // skipcq: CS-A1000
+        public string PosBackgroundUrl { get; set; };
+
+        [StringLength(255)]
+        // skipcq: CS-A1000
+        public string PosVackgroundUrl { get; set; };
+
         /// <summary>
         /// The mapping of submission IDs to the submission record.
         /// </summary>
